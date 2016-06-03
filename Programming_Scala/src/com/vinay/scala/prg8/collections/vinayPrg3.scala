@@ -6,7 +6,7 @@ package com.vinay.scala.prg8.collections
  * Scala Lists are quite similar to arrays which means, all the elements of a list
  * have the same type but there are two important differences. First, lists are immutable,
  * which means elements of a list cannot be changed by assignment.
- * Second, lists represent a linked list whereas arrays are flat.
+ * Second, lists represent a Linked List whereas arrays are flat.
  *
  */
 
@@ -15,7 +15,7 @@ object vinayPrg3 {
 
     //The type of a list that has elements of type T is written as List[T]
     val fruits: List[String] = List("Apple", "Orange", "Mango")
-    //Head :: 	This method returns the first element of a list.
+    //Head :: This method returns the first element of a list.
     println("Head of List :: " + fruits.head)
     //Tail :: This method returns a list consisting of all elements except the first.
     println("Tail of List :: " + fruits.tail)
@@ -25,9 +25,10 @@ object vinayPrg3 {
     println("Reverse Element List :: " + fruits.reverse)
 
     println("==================================================================")
-
+    
+    // We can use either ::: operator or List.:::() method or List.concat() method to add two or more lists
     val anotherFruits: List[String] = List("Litchi", "Pine-Apple")
-    // use two or more lists with ::: operator
+    // Concatenate two or more lists with ::: operator
     var completeFruits = fruits ::: anotherFruits
     println("Complete Fruits List :- " + completeFruits)
     completeFruits = List.concat(fruits, anotherFruits)
