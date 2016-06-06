@@ -1,2 +1,2 @@
 # Programming_Scala
-Step by Step Learning for Scala
+Step by Step Learning for Scala Programming.
